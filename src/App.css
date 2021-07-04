@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.row {
+  padding-top: 30px;
+  /* padding-bottom: 30px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  height: 250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toolbar {
+  background-color: darkcyan;
+  width: 100%;
+  height: 30px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  box-shadow: 1px 1px 10px 2px rgb(87, 87, 87);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+#editor {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(191, 214, 216);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  padding-inline-start: 10px;
+  box-shadow: 1px 1px 10px 2px rgb(87, 87, 87);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.output {
+  margin-top: 20px;
+}
+
+#preview {
+  background-color: rgb(191, 214, 216);
+  padding-inline-start: 10px;
+  box-shadow: 1px 1px 10px 2px rgb(87, 87, 87);
+}
+
+i:hover {
+  color: rgb(132, 214, 132);
+  cursor: pointer;
+}
+
+.maximized {
+  height: 100vh;
+  /* padding-bottom: 10px; */
+}
+
+.hide {
+  display: none;
 }
